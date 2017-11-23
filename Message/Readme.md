@@ -1,4 +1,38 @@
-message -> mailbox
+Email For Practice
+====================
+
+## Key Words
+1.[Dotnet Core](https://dotnet.github.io/)
+2.[Restful](http://www.runoob.com/w3cnote/restful-architecture.html)
+3.[MongoDB](https://www.mongodb.com/download-center)
+4.[Redis](https://redis.io/)
+5.[ELK](https://www.elastic.co/)
+
+====================
+
+## Struct
+![mahua](Description\Email System.png)
+
+====================
+## Dotnet Core
+
+
+## Restful
+
+
+## MongoDB
+
+
+## Redis
+
+
+## ELK
+
+
+## Meta Data
+
+```javascript
+  message -> mailbox
 {
   "Id": "E2A66291-7B16-CE3A-6F8D-0F194A8E08EE",
   "Name":"UserMailBox",
@@ -50,3 +84,5 @@ message -> userSession
     "State":"Online",
     "LastUpdateTime":"2017:11:11 11:11:11:100"
 }
+
+```
