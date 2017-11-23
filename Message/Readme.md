@@ -2,32 +2,35 @@ Email For Practice
 ====================
 
 ## Key Words
-1.[Dotnet Core](https://dotnet.github.io/)
-2.[Restful](http://www.runoob.com/w3cnote/restful-architecture.html)
-3.[MongoDB](https://www.mongodb.com/download-center)
-4.[Redis](https://redis.io/)
-5.[ELK](https://www.elastic.co/)
+* [Dotnet Core](https://dotnet.github.io/)
+* [Restful](http://www.runoob.com/w3cnote/restful-architecture.html)
+* [MongoDB](https://www.mongodb.com/download-center)
+* [Redis](https://redis.io/)
+* [ELK](https://www.elastic.co/)
 
-====================
 
 ## Struct
-<img src="Description/Readme.md"><img/>
+<img src="Description/Email System.png"><img/>
 
-====================
 ## Dotnet Core       
-
+* .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
 ## Restful       
-
+* Restful is a software architecture style, design style, rather than a standard, but provides a set of design principles and constraints. It is mainly used for client-server interaction software. Software designed based on this style can be more concise, more hierarchical, easier to implement mechanisms such as caching.
 
 ## MongoDB        
-
+* MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need
 
 ## Redis      
-
+* Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.
 
 ## ELK
-
+* Elasticsearch
+	* An open source distributed search engine with features such as distributed, zero configuration, automatic discovery, automatic indexing, index copy mechanism, restful style interface, multiple data sources, automatic search load and more.
+* Logstash
+	* A completely open source tool that collects, analyzes, and stores your logs for later use
+* Kibana 
+	* An open source and free tool that analyzes the log of your Logstash and ElasticSearch friendly web interface to help you aggregate, analyze, and search for important data logs.
 
 ## Meta Data
 
@@ -86,3 +89,17 @@ message -> userSession
 }
 
 ```
+
+## Docker
+* 1.build web api app from command line
+	* dotnet restore
+	* dotnet build
+	* dotnet publish -o published
+* 2.build docker image locally
+	* docker build -t {YOUR-DOCKER-ID}/the-app .
+* 3.run docker image + mongodb locally
+	* docker run -d -p 27017:27017 --name mongodb bitnami/mongodb:latest
+	* docker run -d -p 80:80 --name webapi --link mongodb {YOUR-DOCKER-ID}/the-app
+* 4.push app container to Docker Hub
+	* docker login
+	* docker push {YOUR-DOCKER-ID}/the-app
