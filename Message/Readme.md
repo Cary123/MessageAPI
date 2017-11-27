@@ -9,14 +9,20 @@ Email For Practice
 * [ELK](https://www.elastic.co/)
 
 
-## Struct 1
-<img src="Description/Struct1.png"><img/>
-
-## Struct 2
+## Integrated Services Struct
+* All of the logic for processing requests runs in a single process, allowing you to use basic language functions to divide your application into different categories, functions, and namespaces. For some reason, you can run and test your application on your developer's computer and use deployment pipelines to ensure that the various modifications are properly tested and deployed into production. With load balancers, you can scale out this gigantic application by running more instances.
+* The update cycle is tightly bound - even a small part of the change in application requires the refactoring and deployment of the entire application. As time goes by, it is increasingly difficult to maintain a good modular architecture, with immediate impact. Once expanded, it must be scaled up as a whole, rather than merely expanding some of them, requiring more resources.
 <img src="Description/Integrated Services.png"><img/>
 
-## Struct 3
+## Microservices Struct
+* If the application breaks down into multiple services, it can be expected that a single service change may only need to be redeployed.
+* Better support scales horizontally and vertically.
 <img src="Description/Microservices.png"><img/>
+
+## ELK Struct
+* Struct for ELK Log.
+<img src="Description/Struct1.png"><img/>
+
 
 ## Dotnet Core       
 * .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
