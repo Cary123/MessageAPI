@@ -9,8 +9,14 @@ Email For Practice
 * [ELK](https://www.elastic.co/)
 
 
-## Struct
-<img src="Description/Email System.png"><img/>
+## Struct 1
+<img src="Description/Struct1.png"><img/>
+
+## Struct 2
+<img src="Description/Integrated Services.png"><img/>
+
+## Struct 3
+<img src="Description/Microservices.png"><img/>
 
 ## Dotnet Core       
 * .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
