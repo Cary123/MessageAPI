@@ -2,11 +2,13 @@ Email For Practice
 ====================
 
 ## Key Words
+* [Microservices](https://www.martinfowler.com/articles/microservices.html)
 * [Dotnet Core](https://dotnet.github.io/)
 * [Restful](http://www.runoob.com/w3cnote/restful-architecture.html)
 * [MongoDB](https://www.mongodb.com/download-center)
 * [Redis](https://redis.io/)
 * [ELK](https://www.elastic.co/)
+* [Docker](https://www.docker.com/)
 
 
 ## Integrated Services Struct
@@ -47,7 +49,8 @@ Email For Practice
 ## Meta Data
 
 ```javascript
-  message -> mailbox
+USE message
+db.mailbox.insertOne(
 {
   "Id": "E2A66291-7B16-CE3A-6F8D-0F194A8E08EE",
   "Name":"UserMailBox",
@@ -56,9 +59,9 @@ Email For Practice
   "MaxSize":1099511627776,
   "AvailableSize":1099511627776,
   "LastUpdateTime": "2017:11:11 11:11:11:100"
-}
+})
 
-message -> folder
+db.folder.insertOne(
 {
     "Id":"580A56AB-802F-2D44-EF05-09FF57C4FC30",
     "Name":"Inbox",
@@ -67,9 +70,9 @@ message -> folder
     "MessageCount":0,
     "MailBoxId":"E2A66291-7B16-CE3A-6F8D-0F194A8E08EE",
     "LastUpdateTime":"2017:11:11 11:11:11:100"
-}
+})
 
-message -> message
+db.message.insertOne(
 {
     "Id":"27C15195-0AD4-63CF-7DB4-6B65494E8111",
     "Subject":"HelloWorld",
@@ -82,23 +85,23 @@ message -> message
     "OriginalFolderId":"580A56AB-802F-2D44-EF05-09FF57C4FC30",
     "CurrentFolderId":"580A56AB-802F-2D44-EF05-09FF57C4FC30",
     "LastUpdateTime":"2017:11:11 11:11:11:100"
-}
+})
 
-message -> users
+db.users.insertOne(
 {
     "Id":"580A56AB-802F-2D44-EF05-09FF57C4FC30",
     "Username":"Joseph",
     "Password":"123456",
     "LastUpdateTime":"2017:11:11 11:11:11:100"
-}
+})
 
-message -> userSession
+db.userSession.insertOne(
 {
     "SessionId":"6B503F43-E4AC-7F60-4A84-A021C01FA21F",
     "Username":"Joseph",
     "State":"Online",
     "LastUpdateTime":"2017:11:11 11:11:11:100"
-}
+})
 
 ```
 
